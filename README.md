@@ -82,6 +82,17 @@
 ```
 > `Tips`:我们提供了Nexus6的build [传送门](https://github.com/SmartisanTech/SmartisanOS_Build_Release)
 
+升级Java
+```bash
+sudo apt-get install default-jre
+sudo apt-get install default-jdk
+```
+
+编译错误
+```
+apt-get install lib32stdc++6
+```
+
 编译完成后Nexsu6真机的刷机， 请参考 <http://source.android.com/source/running.html#flashing-a-device>
 或者使用模拟器，可能配置不对，会有黑屏的问题
 ```sh
