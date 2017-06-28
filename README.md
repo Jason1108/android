@@ -91,6 +91,7 @@ sudo apt-get install default-jdk
 编译错误
 ```
 apt-get install lib32stdc++6
+apt-get install libxml2-utils
 ```
 
 编译完成后Nexsu6真机的刷机， 请参考 <http://source.android.com/source/running.html#flashing-a-device>
