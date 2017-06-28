@@ -102,12 +102,7 @@ ERROR: Cannot launch Jack server
 make: *** [out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex] Error 41
 make: *** Waiting for unfinished jobs....
 ```
-
-its because ~/.jack has an incorrect permission
-you can fix it with
-```sh
-chmod 777 ~/.jack
-```
+refer to https://www.bbsmax.com/A/lk5ae9451O/
 
 编译完成后Nexsu6真机的刷机， 请参考 <http://source.android.com/source/running.html#flashing-a-device>
 或者使用模拟器，可能配置不对，会有黑屏的问题
