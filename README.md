@@ -92,6 +92,21 @@ sudo apt-get install default-jdk
 ```
 apt-get install lib32stdc++6
 apt-get install libxml2-utils
+apt-get install clang
+```
+
+if you encounter this error
+```sh
+out/host/linux-x86/bin/jack: line 131: 31049 Killed                  $SERVER_PRG $SERVER_PORT_SERVICE $SERVER_PORT_ADMIN $SERVER_COUNT $SERVER_NB_COMPILE $SERVER_TIMEOUT >> $SERVER_LOG 2>&1
+ERROR: Cannot launch Jack server
+make: *** [out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex] Error 41
+make: *** Waiting for unfinished jobs....
+```
+
+its because ~/.jack has an incorrect permission
+you can fix it with
+```sh
+chmod 777 ~/.jack
 ```
 
 编译完成后Nexsu6真机的刷机， 请参考 <http://source.android.com/source/running.html#flashing-a-device>
